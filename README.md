@@ -5,4 +5,6 @@ Gerador de links personalizados para o WhatsApp.
 
 -Jekyll
 
+## Status
+
 [EM DESENVOLVIMENTO]

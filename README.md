@@ -1,4 +1,4 @@
-## Whatsapp Link Creator
+# Whatsapp Link Creator
 Gerador de links personalizados para o WhatsApp.
 
 ## Tools
@@ -7,4 +7,4 @@ JS | HTML | CSS
 
 ## Status
 
-[EM DESENVOLVIMENTO]
+[developing on repl.it]

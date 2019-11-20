@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css?family=Alata&display=swap');
+
+body {
+  background-color: #01BFA5;
+}
+
+h1 {
+  font-family: 'Alata', sans-serif;
+  color: #FFFFFF;
+  text-align: center;
+
+}
+
+.form {
+
+}
+
+.form_label {
+
+}
+
+.form_input {
+
+}
+
+.form_control {
+  margin: 20px;
+}
+
+.form_submit {
+  margin: 20px;
+}
+
+.input_hidden {
+  display: none;
+}

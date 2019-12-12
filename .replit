@@ -1,0 +1,2 @@
+language = "bash"
+run = "git commit -m \"update css file\""

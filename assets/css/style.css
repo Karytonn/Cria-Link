@@ -28,6 +28,7 @@ h1 {
   letter-spacing: .025em;
   color: #282828;
   margin: .5em 0;
+  text-align: center;
 }
 
 p {
@@ -35,6 +36,7 @@ p {
   color: #282828;
   margin: .5em 0 1em 0;
   line-height: 1.2em;
+  text-align: center;
 }
 
 .form {

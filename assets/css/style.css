@@ -34,7 +34,7 @@ p {
   font-weight: 400;
   color: #282828;
   margin: .5em 0 1em 0;
-
+  line-height: 1.2em;
 }
 
 .form {
@@ -122,3 +122,17 @@ p {
   color: #28282867;
 }
 
+
+@media(max-width: 450px) {
+  main {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    width: auto;
+    height: 100vh;
+    background-color: #d8e8ea;  
+    padding: 20px;
+  
+  }
+
+}

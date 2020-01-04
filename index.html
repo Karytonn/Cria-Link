@@ -2,33 +2,45 @@
 <html lang="pt-Br">
 
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width">
-	<title>Whatsapp Link Creator</title>
-  <link rel="stylesheet" href="./assets/css/reset.css" type="text/css" />
-  <link rel="stylesheet" href="./assets/css/style.css" type="text/css" />
-  <link rel="stylesheet" href="./assets/css/flexbox.css" type="text/css" />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Whatsapp Link Creator</title>
+    <link rel="stylesheet" href="./assets/css/reset.css" type="text/css" />
+    <link rel="stylesheet" href="./assets/css/style.css" type="text/css" />
+    <link rel="stylesheet" href="./assets/css/flexbox.css" type="text/css" />
+    <script src="https://kit.fontawesome.com/28557206cb.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
 
-  <main class="container">
-    <h1>Whatsapp Link</h1>
+    <main class="container">
+        <i class="fab fa-whatsapp fa-5x w-icon"></i>
+        <h1>Whatsapp Link</h1>
+        <p>Crie links personalizados para compartilhar seu Whatsapp.</p>
 
-    <form class="form">
-      <label for="numero" class="form_label">N° do celular</label> 
-      <input type="text" placeholder="(99) 9 9999-9999" id="numero" class="form_input" required> 
-       
-      <label for="mensagem" class="form_label">Mensagem</label>
-      <input type="text" placeholder="Escreva o texto" id="mensagem" class="form_input" required>
-      <input type="text" class="link-copy">
+        <form class="form">
+            <label for="numero" class="form_label">N° do celular</label>
+            <input type="text" placeholder="(99) 9 9999-9999" id="numero" class="form_input" required>
 
-      <button type="submit" class="form_submit">Gerar Link</button> 
-    </form>
+            <label for="mensagem" class="form_label">Mensagem</label>
+            <input type="text" placeholder="Escreva o texto" id="mensagem" class="form_input" required>
 
-    <p class="obs"><small>Não guardamos nenhum dado informado.</small></p>
-  </main>
+            <input type="text" class="link-copy" placeholder="https://api.whatsapp.com/send?phone...">
 
-  <script src="script.js"></script>
-  </body>
+            <div class="share-and-copy">
+                <button class="share-and-copy__btn-share"><i class="fas fa-share-alt icon__share"></i>Share</button>
+                <button class="share-and-copy__btn-copy"><i class="far fa-clipboard icon__share"></i>Copy</button>
+            </div>
+
+            <button type="submit" class="form_submit">Gerar Link</button>
+        </form>
+
+        <p class="obs">Não guardamos nenhum dado informado.</p>
+
+        <span id="span">&copy; Karytonn DEV 2019</span>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
 </html>

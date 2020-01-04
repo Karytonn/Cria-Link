@@ -11,7 +11,7 @@ main {
 
   width: 350px;
   height: auto;
-  margin: 40px auto;
+  margin: 20px auto;
   background-color: #d8e8ea;  
   padding: 20px;
 
@@ -133,6 +133,10 @@ p {
     background-color: #d8e8ea;  
     padding: 20px;
   
+  }
+
+  body {
+    background: #d8e8ea;
   }
 
 }

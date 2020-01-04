@@ -7,4 +7,4 @@ JavaScript | HTML | CSS Flexbox
 
 ## Status
 
-[developing ]
+[ developing ]

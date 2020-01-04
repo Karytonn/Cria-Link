@@ -1,0 +1,10 @@
+
+[x] Use CSS Flexbox
+[x] Create responsive layout 
+[ ] Validar os dados também no JS
+[ ] Remove placeholder opacity on link-copy
+[ ] Estilizar elementos
+[ ] Function share and copy link
+[ ] Mask fo cellphone number
+[ ] Convert to PWA
+[ ] Add translate to English

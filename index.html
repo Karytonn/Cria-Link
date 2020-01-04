@@ -7,7 +7,6 @@
     <title>Whatsapp Link Creator</title>
     <link rel="stylesheet" href="./assets/css/reset.css" type="text/css" />
     <link rel="stylesheet" href="./assets/css/style.css" type="text/css" />
-    <link rel="stylesheet" href="./assets/css/flexbox.css" type="text/css" />
     <script src="https://kit.fontawesome.com/28557206cb.js" crossorigin="anonymous"></script>
 </head>
 
@@ -20,19 +19,19 @@
 
         <form class="form">
             <label for="numero" class="form_label">N° do celular</label>
-            <input type="text" placeholder="(99) 9 9999-9999" id="numero" class="form_input" required>
+            <input type="text" placeholder="(99) 9 9999-9999" id="inputnumber" class="form_input" minlength="12" required>
 
             <label for="mensagem" class="form_label">Mensagem</label>
-            <input type="text" placeholder="Escreva o texto" id="mensagem" class="form_input" required>
+            <input type="text" placeholder="Escreva o texto" id="inputmessage" class="form_input" required>
 
-            <input type="text" class="link-copy" placeholder="https://api.whatsapp.com/send?phone...">
+            <input type="text" id="linktocopy" class="link-copy" placeholder="https://api.whatsapp.com/send?phone...">
 
             <div class="share-and-copy">
                 <button class="share-and-copy__btn-share"><i class="fas fa-share-alt icon__share"></i>Share</button>
                 <button class="share-and-copy__btn-copy"><i class="far fa-clipboard icon__share"></i>Copy</button>
             </div>
 
-            <button type="submit" class="form_submit">Gerar Link</button>
+            <button type="submit" onclick="getLink()" class="form_submit">Gerar Link</button>
         </form>
 
         <p class="obs">Não guardamos nenhum dado informado.</p>
@@ -40,7 +39,7 @@
         <span id="span">&copy; Karytonn DEV 2019</span>
     </main>
 
-    <script src="script.js"></script>
+    <script src="/assets/js/script.js"></script>
 </body>
 
 </html>

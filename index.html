@@ -17,7 +17,7 @@
         <h1>Whatsapp Link</h1>
         <p>Crie links personalizados para compartilhar seu Whatsapp.</p>
 
-        <form class="form">
+        <div class="form">
             <label for="inputnumber" class="form_label">N° do celular</label>
             <input type="text" placeholder="(99) 9 9999-9999" id="inputnumber" name="inputnumber" class="form_input" required minlength="12">
 
@@ -28,18 +28,18 @@
 
             <div class="share-and-copy">
                 <button class="share-and-copy__btn-share"><i class="fas fa-share-alt icon__share"></i>Share</button>
-                <button class="share-and-copy__btn-copy"><i class="far fa-clipboard icon__share"></i>Copy</button>
+                <button class="share-and-copy__btn-copy" onclick="copyLink()"><i class="far fa-clipboard icon__share"></i>Copy</button>
             </div>
 
             <input type="button" onclick="getLink()" class="form_submit" value="Gerar Link"/>
-        </form>
+        </div>
 
         <p class="obs">Não guardamos nenhum dado informado.</p>
 
         <span id="span">&copy; Karytonn DEV 2019</span>
     </main>
 
-    <script src="/assets/js/script.js"></script>
+    <script src="/assets/js/getlink.js"></script>
 </body>
 
 </html>

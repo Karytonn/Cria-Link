@@ -79,6 +79,7 @@ p {
 
   font-weight: bold;
   color: #2828288f;
+  outline: none;
   
 }
 
@@ -91,6 +92,7 @@ p {
 
   font-weight: bold;
   color: #2828288f;
+  outline: none;
 }
 
 .icon__share {
@@ -108,7 +110,7 @@ p {
   color: rgb(30, 190, 165);
   margin: 20px auto;
   border: none;
-  
+  outline: none;
 }
 
 

@@ -10,3 +10,5 @@
 [ ] Convert to PWA
 [ ] Add translate to English
 [ ] Refatoring class name
+[ ] Favicon
+[ ] Meta tags to share website

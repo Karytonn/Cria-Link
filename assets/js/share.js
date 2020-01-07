@@ -11,7 +11,7 @@ function shareLink() {
         })
         .catch(console.error);
       } else {
-        alert("[ERRO] Primeiro gere um link!")
+        console.log("Navigator without native Web Share API")
       }
 
 }

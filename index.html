@@ -7,8 +7,14 @@
     <title>Whatsapp Link Creator</title>
     <link rel="stylesheet" href="./assets/css/reset.css" type="text/css" />
     <link rel="stylesheet" href="./assets/css/style.css" type="text/css" />
-    <script src="https://kit.fontawesome.com/28557206cb.js" crossorigin="anonymous"></script>
 
+    <!--Api to get icons-->
+    <script src="https://kit.fontawesome.com/28557206cb.js" crossorigin="anonymous"></script>
+    
+    <!--Manitest from PWA-->
+    <link rel='manifest' href='/manifest.webmanifest'>
+
+    <!--Favi icons-->
     <link rel="apple-touch-icon" sizes="57x57" href="/assets/icon/apple-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="/assets/icon/apple-icon-60x60.png">
     <link rel="apple-touch-icon" sizes="72x72" href="/assets/icon/apple-icon-72x72.png">
@@ -18,7 +24,7 @@
     <link rel="apple-touch-icon" sizes="144x144" href="/assets/icon/apple-icon-144x144.png">
     <link rel="apple-touch-icon" sizes="152x152" href="/assets/icon/apple-icon-152x152.png">
     <link rel="apple-touch-icon" sizes="180x180" href="/assets/icon/apple-icon-180x180.png">
-    <link rel="icon" type="image/png" sizes="192x192"  href="/assets/icon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="/assets/icon/android-icon-192x192.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/assets/icon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="96x96" href="/assets/icon/favicon-96x96.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/assets/icon/favicon-16x16.png">
@@ -30,11 +36,11 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-150973852-4"></script>
     <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
 
-    gtag('config', 'UA-150973852-4');
+        gtag('config', 'UA-150973852-4');
     </script>
 
 </head>
@@ -48,27 +54,51 @@
 
         <div class="form">
             <label for="inputnumber" class="form_label">N° do celular</label>
-            <input type="number" placeholder="(99) 9 9999-9999" id="inputnumber" name="inputnumber" class="form_input" required minlength="12">
+            <input type="number" placeholder="(99) 9 9999-9999" id="inputnumber" name="inputnumber" class="form_input"
+                required minlength="12">
 
             <label for="inputmessage" class="form_label">Mensagem</label>
-            <input type="text" placeholder="Escreva o texto" id="inputmessage" name="inputmessage" class="form_input" required>
+            <input type="text" placeholder="Escreva o texto" id="inputmessage" name="inputmessage" class="form_input"
+                required>
 
             <label for="link"></label>
-            <input disabled type="text" placeholder="https://api.whatsapp.com/send?phone..." id="link" name="link" class="link-copy"/>
+            <input disabled type="text" placeholder="https://api.whatsapp.com/send?phone..." id="link" name="link"
+                class="link-copy" />
 
             <div class="share-and-copy">
-                <button class="share-and-copy__btn-share" onclick="shareLink()"><i class="fas fa-share-alt icon__share"></i>Share</button>
-                <button class="share-and-copy__btn-copy" onclick="copyLink()"><i class="far fa-clipboard icon__share"></i>Copy</button>
+                <button class="share-and-copy__btn-share" onclick="shareLink()"><i
+                        class="fas fa-share-alt icon__share"></i>Share</button>
+                <button class="share-and-copy__btn-copy" onclick="copyLink()"><i
+                        class="far fa-clipboard icon__share"></i>Copy</button>
             </div>
 
-            <input type="button" onclick="getLink()" class="form_submit" value="Gerar Link"/>
+            <input type="button" onclick="getLink()" class="form_submit" value="Gerar Link" />
         </div>
 
         <p class="obs">Não guardamos nenhum dado informado.</p>
 
         <span id="span">&copy; Karytonn DEV 2019</span>
     </main>
+    <script>
+        // This is the "Offline page" service worker
 
+        // Check compatibility for the browser we're running this in
+        if ("serviceWorker" in navigator) {
+            if (navigator.serviceWorker.controller) {
+                console.log("[PWA Builder] active service worker found, no need to register");
+            } else {
+                // Register the service worker
+                navigator.serviceWorker
+                    .register("pwabuilder-sw.js", {
+                        scope: "./"
+                    })
+                    .then(function (reg) {
+                        console.log("[PWA Builder] Service worker has been registered for scope: " + reg.scope);
+                    });
+            }
+        }
+
+    </script>
     <script src="./assets/js/getlink.js"></script>
     <script src="./assets/js/copy.js"></script>
     <script src="./assets/js/share.js"></script>

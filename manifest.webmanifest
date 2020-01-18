@@ -1,0 +1,21 @@
+{
+	"start_url" : "/Whatsapp-Link-Creator/",
+	"name" : "Whatsapp Link",
+	"short_name" : "Whatsapp Link",
+	"description" : "Gerador de links personalizados para o WhatsApp.",
+	"display" : "standalone",
+	"orientation" : "portrait",
+    "lang" : "Portuguese",
+    "icons": [
+        {
+          "src": "/assets/icon/android-icon-192x192.png",
+          "type": "image/png",
+          "sizes": "192x192"
+        },
+        {
+          "src": "/assets/icon/pwaicon.png",
+          "type": "image/png",
+          "sizes": "512x512"
+        }
+      ]
+}

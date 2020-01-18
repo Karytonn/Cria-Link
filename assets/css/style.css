@@ -65,6 +65,10 @@ p {
   border: none;
 }
 
+.link-copy::placeholder {
+  color: #28282857;
+}
+
 .share-and-copy {
   display: flex;
   justify-content: flex-end;
@@ -80,6 +84,8 @@ p {
   font-weight: bold;
   color: #2828288f;
   outline: none;
+
+  cursor: pointer;
   
 }
 
@@ -93,6 +99,15 @@ p {
   font-weight: bold;
   color: #2828288f;
   outline: none;
+
+  cursor: pointer;
+}
+
+.share-and-copy__btn-copy:active, .share-and-copy__btn-share:active {
+  background-color: rgba(38, 211, 104, 0.726);
+  color: white;
+  box-shadow: 2x 5px gray;
+  transform: translateY(1px);
 }
 
 .icon__share {
@@ -111,6 +126,13 @@ p {
   margin: 20px auto;
   border: none;
   outline: none;
+}
+
+.form_submit:active {
+  background-color: rgba(0, 128, 128, 0.507);
+  color: white;
+  box-shadow: 2x 5px gray;
+  transform: translateY(1px);
 }
 
 

@@ -3,12 +3,11 @@
 [x] Create responsive layout 
 [x] Validar os dados também no JS
 [x] Remover outline on button
-[ ] Remove placeholder opacity on link-copy
-[ ] Estilizar elementos
-[ ] Function share and copy link
+[x] Remove placeholder opacity on link-copy
+[x] Estilizar elementos
+[x] Function share and copy link
 [ ] Mask fo cellphone number
 [ ] Convert to PWA
-[ ] Add translate to English
-[ ] Refatoring class name
 [ ] Favicon
 [ ] Meta tags to share website
+[ ] Remover seletor do input number

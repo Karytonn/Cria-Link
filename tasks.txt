@@ -10,4 +10,4 @@
 [ ] Convert to PWA
 [ ] Favicon
 [ ] Meta tags to share website
-[ ] Remover seletor do input number
+[x] Remover seletor do input number

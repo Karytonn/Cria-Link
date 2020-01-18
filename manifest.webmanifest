@@ -1,9 +1,10 @@
 {
-	"start_url" : "/Whatsapp-Link-Creator/",
+	"start_url" : "https://karytonn.github.io/Whatsapp-Link-Creator",
 	"name" : "Whatsapp Link",
 	"short_name" : "Whatsapp Link",
 	"description" : "Gerador de links personalizados para o WhatsApp.",
-	"display" : "standalone",
+  "display" : "standalone",
+  "background_color" : "#D8E8EA",
 	"orientation" : "portrait",
     "lang" : "Portuguese",
     "icons": [

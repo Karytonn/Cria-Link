@@ -6,8 +6,8 @@
 [x] Remove placeholder opacity on link-copy
 [x] Estilizar elementos
 [x] Function share and copy link
+[x] Remover seletor do input number
+[x] Favicon
 [ ] Mask fo cellphone number
 [ ] Convert to PWA
-[ ] Favicon
-[ ] Meta tags to share website
-[x] Remover seletor do input number
+[ ] Meta tags to share websitegit

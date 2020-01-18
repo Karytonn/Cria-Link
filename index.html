@@ -7,7 +7,6 @@
     <title>Whatsapp Link Creator</title>
     <link rel="stylesheet" href="./assets/css/reset.css" type="text/css" />
     <link rel="stylesheet" href="./assets/css/style.css" type="text/css" />
-    <link rel='manifest' href='/manifest.webmanifest'>
     <script src="https://kit.fontawesome.com/28557206cb.js" crossorigin="anonymous"></script>
 
     <link rel="apple-touch-icon" sizes="57x57" href="/assets/icon/apple-icon-57x57.png">
@@ -59,28 +58,6 @@
         <span id="span">&copy; Karytonn DEV 2019</span>
     </main>
 
-    <script>
-    // This is the "Offline page" service worker
-
-    // Add this below content to your HTML page, or add the js file to your page at the very top to register service worker
-
-    // Check compatibility for the browser we're running this in
-    if ("serviceWorker" in navigator) {
-        if (navigator.serviceWorker.controller) {
-    console.log("[PWA Builder] active service worker found, no need to register");
-  } else {
-         // Register the service worker
-        navigator.serviceWorker
-        .register("pwabuilder-sw.js", {
-         scope: "./"
-         })
-        .then(function (reg) {
-        console.log("[PWA Builder] Service worker has been registered for scope: " + reg.scope);
-        });
-    }
-    }
-
-    </script>
     <script src="./assets/js/getlink.js"></script>
     <script src="./assets/js/copy.js"></script>
     <script src="./assets/js/share.js"></script>

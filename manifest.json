@@ -1,5 +1,5 @@
 {
-	"start_url": "/?source=pwa",
+	"start_url": "/index.html",
 	"name": "Whatsapp Link",
 	"short_name": "Whatsapp Link",
 	"description": "Gerador de links personalizados para o WhatsApp.",

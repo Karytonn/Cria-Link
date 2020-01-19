@@ -3,7 +3,7 @@ Gerador de links personalizados para o WhatsApp.
 
 ## Tools
 
-JavaScript | HTML | CSS Flexbox
+JavaScript | HTML | CSS Flexbox | PWA | Firebase
 
 ## Status
 

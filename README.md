@@ -7,6 +7,6 @@ JavaScript | HTML | CSS Flexbox | PWA | Firebase
 
 ## Status
 
-[ developing... ]
+[dev in progress]
 
 [Whatsapp Link](https://whatsapplink-2020.web.app/)

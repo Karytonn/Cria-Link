@@ -9,4 +9,4 @@ JavaScript | HTML | CSS Flexbox | PWA | Firebase
 
 [dev in progress]
 
-[Whatsapp Link](https://whatsapplink-2020.web.app/)
+[Whatsapp Link Creator](https://whatsapplink-2020.web.app/)

@@ -50,7 +50,7 @@
                     });
             }
         }
-        
+
     </script>
 
 </head>
@@ -89,6 +89,30 @@
 
         <span id="span">&copy; Karytonn DEV 2020</span>
     </main>
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/7.7.0/firebase-app.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/7.7.0/firebase-analytics.js"></script>
+
+    <script>
+        // Your web app's Firebase configuration
+        var firebaseConfig = {
+            apiKey: "AIzaSyCinJx4MrHl5FnTjf6kB9mtSBm2eUXrQfQ",
+            authDomain: "whatsapplink-2020.firebaseapp.com",
+            databaseURL: "https://whatsapplink-2020.firebaseio.com",
+            projectId: "whatsapplink-2020",
+            storageBucket: "whatsapplink-2020.appspot.com",
+            messagingSenderId: "142321987263",
+            appId: "1:142321987263:web:8b9f42f0939bac7e29e00a",
+            measurementId: "G-8HQ41PZ975"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+        firebase.analytics();
+    </script>
 
     <script src="./assets/js/getlink.js"></script>
     <script src="./assets/js/copy.js"></script>

@@ -5,16 +5,41 @@ body {
   
 }
 
+body::after {
+	background: url(../img/background-whatsapp.jpg) no-repeat center center fixed; 
+  	background-size: cover;
+  	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+	-o-background-size: cover;
+	opacity: 0.4;
+	position: absolute;
+	content: "";
+	top: 0;
+  	bottom: 0;
+  	right: 0;
+  	left: 0;
+  	z-index: -1; 
+	  
+}
+
 main {
   display: flex;
   flex-direction: column;
 
   width: 350px;
   height: auto;
-  margin: 20px auto;
+  margin: 5vh auto;
   background-color: #d8e8ea;  
   padding: 20px;
 
+  border-radius: 10px 10px 10px 10px;
+  -moz-border-radius: 10px 10px 10px 10px;
+  -webkit-border-radius: 10px 10px 10px 10px;
+  border: 0px solid #000000;
+
+	-webkit-box-shadow: 10px 10px 21px 0px rgba(0,0,0,0.25);
+	-moz-box-shadow: 10px 10px 21px 0px rgba(0,0,0,0.25);
+	box-shadow: 10px 10px 21px 0px rgba(0,0,0,0.25);
 }
 
 .w-icon {
@@ -163,12 +188,19 @@ input[type=number]::-webkit-outer-spin-button {
     width: auto;
     height: 100%;
     background-color: #d8e8ea;  
-    padding: 20px;
+	padding: 20px;
+	
+	border-radius: none;
+	box-shadow: none;
   
   }
 
   body {
     background: #d8e8ea;
+  }
+
+  body::after {
+	background: #d8e8ea;
   }
 
 }

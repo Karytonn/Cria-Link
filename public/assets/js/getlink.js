@@ -4,7 +4,9 @@ function getLink() {
     let linktocopy = document.querySelector('#link')
 
     let cellphone = Number(inputnumber.value)
-    let message = inputmessage.value
+    let message = inputmessage.value.replace(/\s+/g,"%20")
+
+    console.log(`resplace space ${message}`)
 
     if(inputnumber.value.length < 11 || inputmessage.value.length <= 0 ) {
         alert("[ERRO] Insira dados válidos!")

@@ -1,5 +1,5 @@
-# Whatsapp Link Creator
-[Gerador de links personalizados para o WhatsApp](https://whatsapplink-2020.web.app/)
+# Cria Link
+[Gerador de links personalizados para o WhatsApp](https://crialink.space)
 
 ## Tools
 
@@ -9,4 +9,4 @@ JavaScript | HTML | CSS Flexbox | PWA | Firebase
 
 [dev in progress]
 
-[Whatsapp Link Creator](https://whatsapplink-2020.web.app/)
+[Cria Link](https://crialink.space)

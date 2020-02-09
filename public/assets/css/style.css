@@ -12,7 +12,7 @@ body::after {
   	-webkit-background-size: cover;
   	-moz-background-size: cover;
 	-o-background-size: cover;
-	opacity: 0.8;
+	opacity: 0.9;
 	position: absolute;
 	content: "";
 	top: 0;
@@ -43,9 +43,10 @@ main {
 	box-shadow: 10px 10px 21px 0px rgba(0,0,0,0.25);
 }
 
-.w-icon {
-  color: #26d367;
-  text-align: center;
+.app-icon {
+  width: 80px;
+  height: 80px;
+  margin: 0 auto;
 }
 
 h1 {

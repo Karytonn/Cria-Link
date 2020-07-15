@@ -176,11 +176,19 @@ input[type=number]::-webkit-outer-spin-button {
   font-size: 0.8em;
 }
 
-#span {
-  text-align: center;
-  font-weight: bold;
-  color: #28282867;
+.devto {
+  width: 40%;
+  height: 40px;
+  margin: 0 auto 0 auto;
+  background-image: url("../img/logo-karytonn-dev.png");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;;
+   
+
 }
+
+
 
 
 @media(max-width: 450px) {
